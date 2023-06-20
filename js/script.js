@@ -1,7 +1,7 @@
 /**
- Olá, esse é o scrip do projeto, se encontrar alguns códigos comentados, são apenas códigos que testei e que quero implementar no projeto no futuro, porém não estavam funcionando no momento.
+ Olá, esse é o scrip do projeto, se encontrar alguns códigos comentados, são apenas códigos que testei e que quero implementar no projeto no futuro, 
+ porém não estavam funcionando no momento.
  */
-
 
 // Variáveis
 
