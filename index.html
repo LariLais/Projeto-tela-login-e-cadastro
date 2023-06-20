@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-in & Sign-up</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="login-screen">
+        <h1>Login</h1>
+
+        <div id="msgError"></div>
+
+        <div class="label-float">
+          <input type="text" required id="usuarioLogin" placeholder="" />
+          <label id="usuarioLoginLabel" for="usuarioLogin">Usuário</label>
+        </div>
+
+        <div class="label-float">
+          <input type="password" required id="senha" placeholder="" />
+          <label id="senhaLoginLabel" for="senha">Senha</label>
+          <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="justify-center">
+          <button id="btn-login">Entrar</button>
+        </div>
+
+        <div class="justify-center">
+          <hr />
+        </div>
+
+        <p>
+          Não tem uma conta ?
+          <a onclick="trocarModal()">Cadastre-se</a>
+        </p>
+      </div>
+
+      <div id="signup-screen">
+        <h1>Sign up</h1>
+
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+
+        <div class="label-float">
+          <input type="text" id="nome" required placeholder="" />
+          <label id="labelNome" for="nome">Nome</label>
+        </div>
+        <div class="label-float">
+          <input type="text" id="email" required placeholder="" />
+          <label id="labelEmail" for="email">Email</label>
+        </div>
+        <div class="label-float">
+          <input type="text" id="usuarioCadastro" required placeholder="" />
+          <label id="labelUsuario" for="usuarioCadastro">Usuário</label>
+        </div>
+        <div class="label-float">
+          <input type="password" id="senhaCad" required placeholder="" />
+          <label id="labelSenha" for="senhaCad">Senha</label>
+          <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+        <div class="label-float">
+          <input type="password" id="conf-senha" required placeholder="" />
+          <label id="labelConfSenha" for="conf-senha">Confirmar senha</label>
+          <i id="verConfSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+        <button id="btn-cadastro">Cadastrar</button>
+      </div>
+    </div>
+  </body>
+</html>

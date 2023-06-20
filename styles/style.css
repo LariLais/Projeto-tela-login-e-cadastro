@@ -1,0 +1,163 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../assets/imgs/img-bk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#login-screen,
+#signup-screen,
+.bloco {
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 1px 0px gray;
+  width: 300px;
+}
+
+#signup-screen {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #b15a45;
+}
+
+.label-float input {
+  width: 100%;
+  padding: 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 1px solid #b15a45;
+  background-color: transparent;
+  outline: none;
+  min-width: 108px;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+  border-radius: 0;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #b15a45;
+  background-color: transparent;
+}
+
+.label-float label {
+  color: #272362;
+  pointer-events: none;
+  top: 0;
+  position: absolute;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+}
+
+.label-float input:valid + label,
+.label-float input:focus + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #b15a45;
+  background-color: transparent;
+}
+
+button {
+  background-color: transparent;
+  border-color: #b15a45;
+  color: #b15a45;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #b15a45;
+  color: white;
+  cursor: pointer;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+p {
+  color: #b15a45;
+  font-size: 14pt;
+  text-align: center;
+}
+
+a {
+  color: #b15a45;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: #d8765d;
+  cursor: pointer;
+}
+
+.fa-eye {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #b15a45;
+}
+
+#msgError {
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSuccess {
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#logado {
+  color: #b15a45;
+  display: flex;
+  justify-content: center;
+}
